@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firebase App with Authentication with Social Networks">
+    <title>Midterm Exam</title>
+    <link rel="stylesheet" href="./css/core.min.css" />
+    <link rel="stylesheet" href="./css/vendor_bundle.min.css" />
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold">Welcome!</h1>
+                <p class="lead m-0">Sign in to your account</p>
+            </div>
+            <div class="col-md-9 col-lg-6 mx-auto">
+                <form action="#" method="post" class="p-4 p-md-5 card rounded-x1">
+                    <input required placeholder="Email" type="email" id="email" name="email" class="form-control" />
+                    <input placeholder="Password" type="password" id="password" class="form-control mt-2" />
+                    <div class="col-12 col-md-12 mt-4">
+                        <button id="sign-in-2" type="button" class="btn btn-primary w-100">Sign In</button>
+                </form>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <a id="sign-in-button" class="btn bg-googleplay mt-4 text-white w-100" href="#">Google</a>
+                </div>
+            </div>
+            <div id="recaptcha-container"></div>
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <p>Phone test Number: +1 123 456 7890</p>
+                    <input placeholder="Phone Number" type="text" id="phoneNumber" class="form-control" />
+                    <button id="phone-sign-in-button" class="btn mt-2 text-white w-100" style="background-color: green;"
+                        href="#">Phone</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
